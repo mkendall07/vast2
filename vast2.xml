@@ -1,84 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xsi:noNamespaceSchemaLocation="vast2.xsd" version="2.0">
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast2.xsd" version="2.0">
 	<Ad id="Customized">
-				<InLine>
+		<InLine>
 			<AdSystem>Open AdStream</AdSystem>
 			<AdTitle>Customized</AdTitle>
 			<Description>ad Description</Description>
-
-				<Impression><![CDATA[%%SERVER%%/t/%%PAGE%%/%%RAND%%@%%POS%%/ieg/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%USER%%?%%QUERY%%]]></Impression>
+			<Impression>
+				<![CDATA[%%SERVER%%/t/%%PAGE%%/%%RAND%%@%%POS%%/ieg/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%USER%%?%%QUERY%%]]>
+			</Impression>
 			<Creatives>
-											<Creative>
-						<Linear>
-							<Duration>00:00:28</Duration>
+				<Creative>
+					<Linear>
+						<Duration>00:00:28</Duration>
+						<TrackingEvents>
+							<Tracking event="start">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv1/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="midpoint">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv3/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="firstQuartile">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv2/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="thirdQuartile">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv4/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="complete">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv5/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="mute">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv6/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="pause">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv7/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="fullscreen">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv9/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="rewind">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv12/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="unmute">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv13/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="expand">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv14/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="collapse">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv15/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="acceptInvitation">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv16/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="close">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv17/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="resume">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv18/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event="creativeView">
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv19/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]>
+							</Tracking>
+						</TrackingEvents>
+						<VideoClicks>
+							<ClickThrough>
+								<![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/%%POS%%/%%CAMP%%/all_the_things_vast_x01.xml/%%USER%%?%%QUERY%%]]>
+							</ClickThrough>
+						</VideoClicks>
+						<MediaFiles>
+							<MediaFile delivery="progressive" bitrate="1043" width="2880" height="1200" type="video/mp4">
+								<![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_vast_x01.mp4/%%FILEDATE%%]]>
+							</MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+
+				<Creative>
+					<NonLinearAds>
+						<TrackingEvents>
+							<Tracking event='start'>
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@x94/egv1/L%%URL_LEN%%/%%CAMP%%/all_the_things_nl1_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event='midpoint'>
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@x94/egv3/L%%URL_LEN%%/%%CAMP%%/all_the_things_nl1_x01/%%RAND%%]]>
+							</Tracking>
+							<Tracking event='complete'>
+								<![CDATA[%%SERVER%%/t/%%PAGE%%/@x94/egv5/L%%URL_LEN%%/%%CAMP%%/all_the_things_nl1_x01/%%RAND%%]]>
+							</Tracking>
+						</TrackingEvents>
+						<NonLinear id='nonlinearad' width='255' height='255'>
+							<StaticResource creativeType="image/png">
+								<![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_nl1_x01.png/%%FILEDATE%%]]>
+							</StaticResource>
+							<NonLinearClickThrough>
+								<![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/x94/%%CAMP%%/all_the_things_nl1_x01/%%USER%%?%%QUERY%%]]>
+							</NonLinearClickThrough>
+						</NonLinear>
+					</NonLinearAds>
+				</Creative>
+				<Creative>
+					<CompanionAds>
+						<Companion id='companion_1' width='300' height='250'>
+							<StaticResource creativeType="image/png">
+								<![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_comp1_x01.png/%%FILEDATE%%]]>
+							</StaticResource>
 							<TrackingEvents>
-							<Tracking event="start"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv1/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="midpoint"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv3/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="firstQuartile"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv2/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="thirdQuartile"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv4/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="complete"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv5/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="mute"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv6/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="pause"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv7/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="fullscreen"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv9/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="rewind"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv12/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="unmute"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv13/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="expand"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv14/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="collapse"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv15/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="acceptInvitation"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv16/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="close"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv17/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="resume"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv18/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
-							<Tracking event="creativeView"><![CDATA[%%SERVER%%/t/%%PAGE%%/@%%POS%%/egv19/L%%URL_LEN%%/%%CAMP%%/all_the_things_vast_x01/%%RAND%%]]></Tracking>
+								<Tracking event='creativeView'>
+									<![CDATA[www.creativeview.com]]>
+								</Tracking>
 							</TrackingEvents>
-							<VideoClicks>
-								<ClickThrough>
-									<![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/%%POS%%/%%CAMP%%/all_the_things_vast_x01.xml/%%USER%%?%%QUERY%%]]>
-								</ClickThrough>
-							</VideoClicks>
-							<MediaFiles>
-								<MediaFile delivery="progressive" bitrate="1043" width="2880" height="1200" type="video/mp4">
-									<![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_vast_x01.mp4/%%FILEDATE%%]]>
-								</MediaFile>
-							</MediaFiles>
-						</Linear>
-	               </Creative>
-
-    					<Creative>
-    						<NonLinearAds>
-    							<TrackingEvents><Tracking event='start'><![CDATA[%%SERVER%%/t/%%PAGE%%/@x94/egv1/L%%URL_LEN%%/%%CAMP%%/all_the_things_nl1_x01/%%RAND%%]]></Tracking><Tracking event='midpoint'><![CDATA[%%SERVER%%/t/%%PAGE%%/@x94/egv3/L%%URL_LEN%%/%%CAMP%%/all_the_things_nl1_x01/%%RAND%%]]></Tracking><Tracking event='complete'><![CDATA[%%SERVER%%/t/%%PAGE%%/@x94/egv5/L%%URL_LEN%%/%%CAMP%%/all_the_things_nl1_x01/%%RAND%%]]></Tracking>
-					</TrackingEvents>
-
-    					<NonLinear id='nonlinearad' width='255' height='255'      >
-    						<StaticResource creativeType="image/png"><![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_nl1_x01.png/%%FILEDATE%%]]></StaticResource>
-							<NonLinearClickThrough><![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/x94/%%CAMP%%/all_the_things_nl1_x01/%%USER%%?%%QUERY%%]]></NonLinearClickThrough>
-
-    					</NonLinear>
-
-    						</NonLinearAds>
-    					</Creative>
-    					<Creative>
-    						<CompanionAds>
-    					<Companion id='companion_1' width='300' height='250'   >
-    						<StaticResource creativeType="image/png"><![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_comp1_x01.png/%%FILEDATE%%]]></StaticResource>
-    						<TrackingEvents>
-        						<Tracking event='creativeView'><![CDATA[www.creativeview.com]]></Tracking>
-        					</TrackingEvents>
-							<CompanionClickThrough><![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/x96/%%CAMP%%/all_the_things_comp1_x01/%%USER%%?%%QUERY%%]]></CompanionClickThrough>
-
-    					</Companion>
-    					
-    					<Companion id='companionbanner2' width='255' height='255'   >
-    						<StaticResource creativeType="image/png"><![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_comp2_x01.png/%%FILEDATE%%]]></StaticResource>
-    						<TrackingEvents>
-        						<Tracking event='creativeView'><![CDATA[www.creativeview.com]]></Tracking>
-        					</TrackingEvents>
-							<CompanionClickThrough><![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/x95/%%CAMP%%/all_the_things_comp2_x01/%%USER%%?%%QUERY%%]]></CompanionClickThrough>
-
-    					</Companion>
-
-    						</CompanionAds>
-    					</Creative>
-						</Creatives>
+							<CompanionClickThrough>
+								<![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/x96/%%CAMP%%/all_the_things_comp1_x01/%%USER%%?%%QUERY%%]]>
+							</CompanionClickThrough>
+						</Companion>
+						<Companion id='companionbanner2' width='255' height='255'>
+							<StaticResource creativeType="image/png">
+								<![CDATA[%%CDN%%/0/%%CAMP%%/524D5F5641535431_all_the_things_comp2_x01.png/%%FILEDATE%%]]>
+							</StaticResource>
+							<TrackingEvents>
+								<Tracking event='creativeView'>
+									<![CDATA[www.creativeview.com]]>
+								</Tracking>
+							</TrackingEvents>
+							<CompanionClickThrough>
+								<![CDATA[%%SERVER%%/5c/%%PAGE%%/%%RAND%%/x95/%%CAMP%%/all_the_things_comp2_x01/%%USER%%?%%QUERY%%]]>
+							</CompanionClickThrough>
+						</Companion>
+					</CompanionAds>
+				</Creative>
+			</Creatives>
 		</InLine>
-			</Ad>
+	</Ad>
 </VAST>
